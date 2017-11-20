@@ -9,6 +9,9 @@ import Hello from '@/views/Hello'
 import Error404 from '@/views/Error404'
 import Camera from '@/views/Camera'
 import Dashboard from '@/views/Dashboard'
+import Upload from '@/views/Upload'
+import Gallery from '@/views/Gallery'
+import Photo from '@/views/Photo'
 
 Vue.use(Router)
 
@@ -46,8 +49,23 @@ const router = new Router({
       meta: { requiresAuth: true }
     },
     {
+      path: '/upload',
+      component: Upload,
+      meta: { requiresAuth: true }
+    },
+    {
       path: '/camera',
       component: Camera,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/gallery',
+      component: Gallery,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/photo/:id',
+      component: Photo,
       meta: { requiresAuth: true }
     },
     {

@@ -33,6 +33,7 @@ Highcharts.setOptions({
   }
 })
 highchartsMore(Highcharts)
+require('highcharts/modules/bullet.src.js')(Highcharts)
 Vue.use(VueHighcharts, { Highcharts })
 
 // firebase

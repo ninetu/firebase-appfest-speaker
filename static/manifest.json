@@ -1,5 +1,6 @@
 {
-    "name": "Appfest Speaker",
+    "short_name": "Speaker+",
+    "name": "Appfest Speaker+",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -9,5 +10,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    // "display": "standalone",
+    "display": "fullscreen"
 }

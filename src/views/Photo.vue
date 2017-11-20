@@ -238,7 +238,7 @@ export default {
           }
         },
         title: {
-          text: 'Happy Index'
+          text: 'Real Time Happy Index'
         },
         xAxis: {
           type: 'datetime',
@@ -419,7 +419,8 @@ export default {
   mounted () {
     var self = this
     var cameraRef = this.$firebase.database().ref()
-    cameraRef.child('camera').orderByChild('ts').limitToFirst(1).on('value', function (snapshot) {
+    // cameraRef.child('camera').orderByChild('ts').limitToFirst(1).on('value', function (snapshot) {
+    cameraRef.child('camera/' + self.photoId).on('value', function (snapshot) {
       self.photos = []
       var snapKey = snapshot.key
       var tmp = []

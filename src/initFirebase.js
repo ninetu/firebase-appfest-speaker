@@ -4,12 +4,12 @@ import 'firebaseui/dist/firebaseui.css'
 import store from './store'
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyBJAeo97dT_6rxXhTwTZmMT2GMIrb4ADuc',
-  authDomain: 'nytu-e9e62.firebaseapp.com',
-  databaseURL: 'https://nytu-e9e62.firebaseio.com',
-  projectId: 'nytu-e9e62',
-  storageBucket: 'nytu-e9e62.appspot.com',
-  messagingSenderId: '1039983935962'
+  apiKey: 'AIzaSyBYaQkiLZ7_f1OTOtkuU7OolXoAlixhfpY',
+  authDomain: 'appfest-speaker.firebaseapp.com',
+  databaseURL: 'https://appfest-speaker.firebaseio.com',
+  projectId: 'appfest-speaker',
+  storageBucket: 'appfest-speaker.appspot.com',
+  messagingSenderId: '968066378333'
 })
 
 if (__DEV__) {
